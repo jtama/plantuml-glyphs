@@ -1,0 +1,12 @@
+= PlantUML glyphs library
+
+== Generating new glyph from png
+
+Download jar https://plantuml.com/fr/download
+
+[source, sh]
+----
+java -jar plantuml.jar -encodesprite 16 onepoint.png
+----
+
+

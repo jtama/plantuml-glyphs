@@ -1,0 +1,25 @@
+@startuml
+!include common.puml
+!include k8s/cm.puml
+!include k8s/kubernetes.puml
+!include k8s/pod.puml
+!include k8s/pv.puml
+!include k8s/pvc.puml
+!include k8s/secret.puml
+!include k8s/svc.puml
+!include onepoint/legend.puml
+
+
+KUBERNETES("K8S","Kubernetes") {
+    CM("CM", "Config map")
+    POD("POD", "Pod")
+    PV("PV", "Persistent volume")
+    PVC("PVC", "Persistent volume claim")
+    SECRET("SECRET", "Chhhhh")
+    SVC("SVC", "Service")
+}
+
+
+LAYOUT_WITH_LEGEND()
+
+@enduml
