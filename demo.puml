@@ -7,6 +7,11 @@
 !include k8s/pvc.puml
 !include k8s/secret.puml
 !include k8s/svc.puml
+!include opentelemetry/opentelemetry.puml
+!include opentelemetry/receiver.puml
+!include opentelemetry/collector.puml
+!include opentelemetry/exporter.puml
+!include opentelemetry/processor.puml
 !include onepoint/legend.puml
 
 
@@ -17,6 +22,13 @@ KUBERNETES("K8S","Kubernetes") {
     PVC("PVC", "Persistent volume claim")
     SECRET("SECRET", "Chhhhh")
     SVC("SVC", "Service")
+}
+
+OTLP("OTEL", "Opentelemetry"){
+    RECEIVER("RC", "Receiver")
+    COLLECTOR("CL", "Collector")
+    EXPORTER("EXP", "Exporter")
+    PROCESSOR("PROC", "Processor")
 }
 
 
