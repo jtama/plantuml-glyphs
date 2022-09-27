@@ -57,9 +57,6 @@ sprite $pod [48x48/16] {
 !define POD(_alias, _label, _shape) ENTITY(_shape,black,pod,_label, _alias,K8S POD)
 !define POD(_alias, _label, _shape, _color) ENTITY(_shape,_color,pod,_label, _alias,K8S POD)
 skinparam {
-    folderBackgroundColor<<K8S>> White
-    RectangleBackgroundColor<<K8S POD>> White
-    RectangleBorderThickness<<K8S POD>> 0
     defaultTextAlignment center
 }
 @enduml

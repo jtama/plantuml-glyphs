@@ -55,8 +55,6 @@ sprite $receiver [48x48/16] {
 !define RECEIVER(_alias, _label, _shape) ENTITY(_shape,#0E2E40,receiver,_label, _alias,OTEL RECEIVER)
 !define RECEIVER(_alias, _label, _shape, _color) ENTITY(_shape,_color,receiver,_label, _alias,OTEL RECEIVER)
 skinparam {
-    RectangleBackgroundColor<<OTEL RECEIVER>> White
-    RectangleBorderThickness<<OTEL RECEIVER>> 0
     defaultTextAlignment center
 }
 @enduml

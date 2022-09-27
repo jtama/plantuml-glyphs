@@ -12,7 +12,10 @@
 !include opentelemetry/collector.puml
 !include opentelemetry/exporter.puml
 !include opentelemetry/processor.puml
+!include grafana/tempo.puml
+!include grafana/loki.puml
 !include onepoint/legend.puml
+!include <logos/grafana>
 
 
 KUBERNETES("K8S","Kubernetes") {
@@ -31,6 +34,10 @@ OTLP("OTEL", "Opentelemetry"){
     PROCESSOR("PROC", "Processor")
 }
 
+cloud <$grafana> {
+    TEMPO(Tempo)
+    LOKI(Loki)
+}
 
 LAYOUT_WITH_LEGEND()
 

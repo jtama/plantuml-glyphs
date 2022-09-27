@@ -57,8 +57,6 @@ sprite $exporter [48x48/16] {
 !define EXPORTER(_alias, _label, _shape) ENTITY(_shape,#0E2E40,exporter,_label, _alias,OTEL EXPORTER)
 !define EXPORTER(_alias, _label, _shape, _color) ENTITY(_shape,_color,exporter,_label, _alias,OTEL EXPORTER)
 skinparam {
-    RectangleBackgroundColor<<OTEL EXPORTER>> White
-    RectangleBorderThickness<<OTEL EXPORTER>> 0
     defaultTextAlignment center
 }
 @enduml

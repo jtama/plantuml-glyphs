@@ -55,8 +55,6 @@ sprite $processor [48x48/16] {
 !define PROCESSOR(_alias, _label, _shape) ENTITY(_shape,#0E2E40,processor,_label, _alias,OTEL PROCESSOR)
 !define PROCESSOR(_alias, _label, _shape, _color) ENTITY(_shape,_color,processor,_label, _alias,OTEL PROCESSOR)
 skinparam {
-    RectangleBackgroundColor<<OTEL PROCESSOR>> White
-    RectangleBorderThickness<<OTEL PROCESSOR>> 0
     defaultTextAlignment center
 }
 @enduml

@@ -55,8 +55,6 @@ sprite $opentelemetry [48x48/16] {
 !define OTLP(_alias, _label, _shape) ENTITY(_shape,#0E2E40,opentelemetry,_label, _alias,OTLP)
 !define OTLP(_alias, _label, _shape, _color) ENTITY(_shape,_color,opentelemetry,_label, _alias,OTLP)
 skinparam {
-    RectangleBackgroundColor<<OTLP>> White
-    RectangleBorderThickness<<OTLP>> 0
     defaultTextAlignment center
 }
 @enduml

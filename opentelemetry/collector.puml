@@ -31,8 +31,6 @@ sprite $collector [48x48/8] {
 !define COLLECTOR(_alias, _label, _shape) ENTITY(_shape,#0E2E40,collector,_label, _alias,OTEL COLLECTOR)
 !define COLLECTOR(_alias, _label, _shape, _color) ENTITY(_shape,_color,collector,_label, _alias,OTEL COLLECTOR)
 skinparam {
-    RectangleBackgroundColor<<OTEL COLLECTOR>> White
-    RectangleBorderThickness<<OTEL COLLECTOR>> 0
     defaultTextAlignment center
 }
 @enduml
